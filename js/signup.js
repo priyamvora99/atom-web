@@ -7,7 +7,7 @@ $(document).ready(function(){
         details.phone=$('#phone').val().toString();
         console.log(details.phone);
        $.ajax({
-            url:'http://127.0.0.1:3000/signup',
+            url:'https://arcane-waters-75160.herokuapp.com/signup',
             type:'POST',
             data:details,
            

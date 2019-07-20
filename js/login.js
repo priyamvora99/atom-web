@@ -6,7 +6,7 @@ $(document).ready(function(){
         details.password=$('#password').val();
         
        $.ajax({
-            url:'http://127.0.0.1:3000/login',
+            url:'https://arcane-waters-75160.herokuapp.com/login',
             type:'POST',
             data:details,
            

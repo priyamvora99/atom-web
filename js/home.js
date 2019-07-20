@@ -20,7 +20,7 @@ $(document).ready(function(){
            }else{
                 //here do computation and upload data to database!
                  $.ajax({
-                    url:'http://127.0.0.1:3000/uploadAttendance',
+                    url:'https://arcane-waters-75160.herokuapp.com/uploadAttendance',
                     type:'POST',
                     data:sendObject,
                     crossDomain:true,

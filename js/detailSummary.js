@@ -33,7 +33,7 @@ $(document).ready(function(){
     //var html1='<div class="col-lg-3"</div><div class="col-lg-3"><ul class="legend"><li><span class="superawesome"></span> Super Awesome</li><li><span class="awesome"></span> Awesome</li><li><span class="kindaawesome"></span> Kinda Awesome</li><li><span class="notawesome"></span> Not Awesome</li></ul></div>';
     $('#detailsPanel').show();
    
-    var url='http://127.0.0.1:3000/detailSummary';
+    var url='https://arcane-waters-75160.herokuapp.com/detailSummary';
 
     $.get(url,{'substr':substr,'eid':eid},(data)=>{
          

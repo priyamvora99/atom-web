@@ -1,6 +1,6 @@
 $(document).ready(function(){
   
-    var url='http://127.0.0.1:3000/getYear';
+    var url='https://arcane-waters-75160.herokuapp.com/getYear';
     $.get(url,function(data){
         var newOptions='';
         for (var id in data) {
@@ -31,7 +31,7 @@ $(document).ready(function(){
         var month=$('.selectMonth').val();
         var year=$('.selectYear').val();
         var substr=month + ' ' + year;
-        var url='http://127.0.0.1:3000/getSummary';
+        var url='https://arcane-waters-75160.herokuapp.com/getSummary';
         $.get(url,{'substr':substr},(data)=>{
             console.log(data);
             $('#tableContainer').show();
