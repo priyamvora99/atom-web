@@ -22,9 +22,8 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
-    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
-
-
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/xlsx.full.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/jszip.js"></script>
 </head>
 
 <body>
@@ -109,7 +108,7 @@
             <div class="container">
                     <div class="col-md-8 col-md-offset-2">
                         <h3>Upload File</h3>
-                        <form>
+                        <form enctype="multipart/form-data" method="POST" id="uploadFile">
                         
                             <div class="form-group">
                                 <div class="input-group input-file" name="Fichier1">
@@ -124,7 +123,7 @@
                             </div>
             
                             <div class="form-group">
-                                <input type="button" class="btn btn-success pull-right" id="submitFile" value="Submit"/>
+                                <input type="submit" class="btn btn-success pull-right" id="submitFile" value="Submit"/>
                                 
                             </div>
                             <div class="alert alert-danger alert-dismissible fade in" style="display:none;margin-top:40px;" id="noFileError">

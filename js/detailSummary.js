@@ -52,9 +52,9 @@ $(document).ready(function(){
            $('.in-time:eq('+i+')').text("Intime: "+obj[key][key1[i]].intime);
            $('.out-time:eq('+i+')').text("Outtime: "+obj[key][key1[i]].outtime);
            $('.hours:eq('+i+')').text("Total working hours: "+obj[key][key1[i]].hours);
-           $('.cafeteria:eq('+i+')').text("Cafeterial: "+obj[key][key1[i]].cafeteria);
+           $('.cafeteria:eq('+i+')').text("Cafeteria: "+obj[key][key1[i]].cafeteria);
            $('.recreation:eq('+i+')').text("Recreation: "+obj[key][key1[i]].recreation);
-           $('.outofturnstile:eq('+i+')').text("Out Of Turnstile: "+obj[key][key1[i]].outOfTurnstile);
+           $('.outofturnstile:eq('+i+')').text("Out of Turnstile: "+obj[key][key1[i]].outOfTurnstile);
            $('.total:eq('+i+')').text("Total: "+obj[key][key1[i]].total);
            $('.arrivalAfterFlexiHours:eq('+i+')').text("Arrival After Flexi Hours? "+obj[key][key1[i]].lateArrivalAfterFlexiHoursCount).css('font-weight','bold');
            $('.fulldayLeave:eq('+i+')').text("Leave? "+obj[key][key1[i]].fullDayLeave).css('font-weight','bold');
